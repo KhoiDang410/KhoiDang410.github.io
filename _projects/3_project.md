@@ -1,15 +1,17 @@
 ---
 layout: page
-title: Deep learning for genomics & proteins
-description: GPU-accelerated ML for sequence and protein modeling
+title: Single-cell & single-nucleus RNA-seq
+description: scanpy / Seurat-style pipelines + a reusable in-house scRNA framework
 img: assets/img/1.jpg
 importance: 3
-category: research
+category: analyses
 related_publications: false
 ---
 
-Applying deep learning frameworks (**PyTorch**, **Lightning**, **Keras**) and
-**ESM** protein language models to genomics and protein problems, optimized with
-GPU acceleration (CUDA/cuDNN) and multi-threaded data-loading architectures.
+End-to-end single-cell and single-nucleus RNA-seq analysis. **Python/scanpy**
+pipelines — CellBender background removal → anndata concatenation → BioMart
+gene-symbol mapping → QC/filtering → clustering & annotation — alongside R
+Markdown reports for collaborators.
 
-<!-- TODO (optional): link papers, code, or results. -->
+I also maintain a reusable, **config-driven in-house scRNA framework** (21 R
+modules, lintr-linted) that standardizes single-cell analysis across studies.

@@ -32,7 +32,9 @@
       institution: Bioinformatics Department, UT Southwestern Medical Center
       year: 2025 - present
       description:
-        - Drives advanced analysis of multi-omics NGS datasets and customized structural variant calling pipelines.
+        - Authored and maintained 23 analysis projects for 9+ labs (206 commits) across genomics, transcriptomics, single-cell/spatial, epigenomics, proteomics, and metabolomics.
+        - Engineered a flagship Nextflow DSL2 variant-calling pipeline (germline/somatic/structural; 83 modules, 61 nf-test unit tests) running on SLURM with Apptainer.
+        - Built a personal library of 68 version-locked container images and a YAML-driven Docker build system for fully reproducible pipelines.
         - Mentors junior researchers in computational problem-solving and software development best practices.
     - title: Associate Data Scientist
       institution: Epigenetics and Molecular Carcinogenesis Department, MD Anderson Cancer Center
@@ -68,27 +70,49 @@
 - title: Technical Skills
   type: nested_list
   contents:
-    - title: Programming Languages
+    - title: Languages
       items:
-        - Python, R, C#, C++, Java, MATLAB
-    - title: Data Science & ML Frameworks
+        - Python, R, Bash/Shell, Nextflow DSL2, Groovy, C#, C++, Java, MATLAB
+    - title: Workflow & Infrastructure
       items:
-        - PyTorch, Keras, Lightning
-    - title: Workflow Management
+        - Nextflow (DSL2, nf-core), Snakemake, SLURM/LSF HPC, Apptainer/Singularity, Docker, Mamba/Conda, nf-test, Git/GitLab CI/CD, multi-stage container builds
+    - title: Genomics & Variant Calling
       items:
-        - Nextflow, Snakemake
-    - title: Bioinformatics Tools
+        - GATK4 (HaplotypeCaller, Mutect2, BQSR), DeepVariant, DeepSomatic, FreeBayes, BWA-MEM2, structural variants (Manta, Strelka, GRIDSS, Delly), CNVkit, VEP, AnnotSV, SpliceAI, Picard, SAMtools/BCFtools, mosdepth
+    - title: Transcriptomics
       items:
-        - Biopython, Bioconductor, DESeq2, Picard, Immcantation, GATK, HOMER, SEACR, MACS3, rMATS, TRUST4, Seurat, deepTools, copyKat, scType, DeepVariant
-    - title: Systems, HPC & DevOps
+        - Bulk RNA-seq (nf-core/rnaseq, Salmon, STAR, StringTie), DESeq2, limma, ORA/GSEA enrichment, de-novo assembly (Trinity, SPAdes, gffcompare)
+    - title: Single-cell & Spatial
       items:
-        - Linux system administration, Slurm, LSF, Git, GitLab CI/CD, Apptainer, Podman
-    - title: Cloud
+        - scanpy, anndata, squidpy, rapids-singlecell (GPU), CellBender, Harmony, Leiden, bin2cell, Visium HD, cellxgene, Seurat, pseudobulk DE
+    - title: Epigenomics
       items:
-        - Azure, AWS
-    - title: UI / UX
+        - ChIP-seq / CUT&RUN, MACS3, SEACR, LanceOtron, deepTools, ChIP-Rx spike-in normalization, karyoploteR, DNA methylation arrays (SeSAMe)
+    - title: Proteomics & Metabolomics
       items:
-        - Plotly + Dash, Shiny
+        - Differential abundance, KSEA, harmonizR batch correction, MSEA/QEA, MSigDB/Reactome GSEA
+    - title: Machine Learning
+      items:
+        - PyTorch, PyTorch-Lightning, protein language models (ESM3), Transformers, hierarchical multi-label classification, DDP, mixed precision (AMP), scikit-learn
+    - title: Reporting & Reproducibility
+      items:
+        - R Markdown, Jupyter, MultiQC, version pinning, seeded pipelines, containerized environments, collaborator-facing HTML reports
+
+- title: Selected Projects
+  type: nested_list
+  contents:
+    - title: Targeted-panel variant calling pipeline (flagship)
+      items:
+        - Production Nextflow DSL2 — germline/somatic/structural variants; 83 modules, 61 nf-test unit tests, on SLURM with Apptainer.
+    - title: Bioinformatics container library & build system
+      items:
+        - 68 version-locked Docker images of the full toolchain, plus a YAML-to-Docker build system for Nextflow.
+    - title: Single-cell, single-nucleus & spatial transcriptomics
+      items:
+        - scanpy/Seurat pipelines, a reusable in-house scRNA framework, and GPU-accelerated Visium HD spatial analysis.
+    - title: Protein function prediction (deep learning)
+      items:
+        - Multi-label Gene Ontology prediction over ESM3 embeddings (CAFA Kaggle competition).
 
 - title: Academic Interests
   type: nested_list

@@ -11,3 +11,5 @@ assets/libs/
 node_modules/
 vendor
 .idea
+# Private workplace portfolio — local raw material only, never publish
+repo_summary.md

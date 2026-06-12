@@ -1,18 +1,22 @@
 ---
 layout: page
-title: Multi-omics NGS analysis pipelines
-description: Scalable, reproducible workflows for clinical sequencing cohorts
+title: Targeted-panel variant calling pipeline
+description: Production Nextflow pipeline — germline, somatic & structural variants
 img: assets/img/12.jpg
 importance: 1
-category: software
+category: pipelines
 related_publications: false
 ---
 
-Reproducible, massively parallel pipelines for processing high-throughput
-sequencing cohorts — whole-exome, DNA-seq, bulk/single-cell/single-nucleus
-RNA-seq, ChIP-seq, and CUT&RUN. Built with **Nextflow** (nf-core, DSL2) and
-**Snakemake**, containerized with Docker/Apptainer/Podman, and orchestrated on
-HPC (Slurm, LSF) and cloud (AWS, Azure) infrastructure.
+A production-grade, ultra-deep **targeted gene-panel** variant-calling pipeline —
+the most engineering-mature project in my portfolio. Built in **Nextflow DSL2**,
+it runs cohort-scale on **SLURM** with full **Apptainer** containerization and
+covers the complete germline + somatic + **structural-variant** workflow across
+10 stages:
 
-<!-- TODO (optional): add a repo link, an architecture diagram, or screenshots.
-     Replace the img above with your own at assets/img/. -->
+QC → BWA-MEM2 mapping → GATK4 BQSR → HaplotypeCaller / FreeBayes (germline) →
+**Mutect2** (somatic) → SV calling → **VEP / AnnotSV** annotation → variant QC &
+reporting.
+
+83 modules, backed by **61 `nf-test` unit tests and snapshots** — scientific
+software treated as software, with version pinning and seeded, reproducible runs.

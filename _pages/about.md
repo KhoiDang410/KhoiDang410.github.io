@@ -29,14 +29,20 @@ latest_posts:
 
 I am a **Computational Biologist** in the Bioinformatics Department at
 [UT Southwestern Medical Center](https://www.utsouthwestern.edu/), where I build
-scalable, reproducible pipelines and custom algorithms to make sense of
-high-throughput sequencing data in translational cancer research.
+reproducible, production-grade analysis pipelines for wet-lab collaborators across
+genomics, transcriptomics, proteomics, metabolomics, spatial biology, and
+epigenomics — turning raw sequencing and mass-spec data into publication-ready
+results. Over the past year I authored and maintained **23 analysis projects** for
+**9+ labs**.
 
-My work spans multi-omics and clinical NGS — whole-exome, DNA-seq,
-bulk/single-cell/single-nucleus RNA-seq, ChIP-seq, and CUT&RUN — orchestrated
-through massively parallel workflows (Nextflow, Snakemake) on HPC and cloud
-infrastructure. I also apply deep learning (PyTorch, ESM protein models) with
-GPU acceleration to genomics and protein problems.
+My work centers on **workflow engineering**: modular **Nextflow DSL2** pipelines
+running on **SLURM HPC** with full **Apptainer/Docker** containerization, backed by
+a personal library of **68 version-locked container images** spanning the modern
+bioinformatics toolchain. I treat scientific software as software — my flagship
+variant-calling pipeline ships with **61 `nf-test` unit tests across 83 modules**.
+On the analysis side I'm fluent in **R** (Bioconductor, DESeq2, single-cell) and
+**Python** (scanpy, squidpy, GPU-accelerated single-cell, PyTorch/Lightning, ESM
+protein language models).
 
 I bring an unusual background to computational biology: a **Doctor of Medicine**
 from the University of Medicine and Pharmacy at Ho Chi Minh City, paired with
