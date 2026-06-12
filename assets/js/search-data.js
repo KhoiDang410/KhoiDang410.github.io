@@ -407,21 +407,46 @@ ninja.data = [{
           section: "News",},{id: "news-new-paper-out-in-nature-communications-pol-θ-mediated-end-joining-uses-microhomologies-containing-mismatches-page-facing-up",
           title: 'New paper out in Nature Communications: Pol θ-mediated end-joining uses microhomologies containing mismatches....',
           description: "",
-          section: "News",},{id: "projects-multi-omics-ngs-analysis-pipelines",
-          title: 'Multi-omics NGS analysis pipelines',
-          description: "Scalable, reproducible workflows for clinical sequencing cohorts",
+          section: "News",},{id: "projects-targeted-panel-variant-calling-pipeline",
+          title: 'Targeted-panel variant calling pipeline',
+          description: "Production Nextflow pipeline — germline, somatic &amp; structural variants",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-structural-variant-calling",
-          title: 'Structural variant calling',
-          description: "Custom SV detection for translational cancer research",
+            },},{id: "projects-bioinformatics-container-library-amp-build-system",
+          title: 'Bioinformatics container library &amp;amp; build system',
+          description: "68 version-locked container images + a YAML→Docker build system",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-deep-learning-for-genomics-amp-proteins",
-          title: 'Deep learning for genomics &amp;amp; proteins',
-          description: "GPU-accelerated ML for sequence and protein modeling",
+            },},{id: "projects-single-cell-amp-single-nucleus-rna-seq",
+          title: 'Single-cell &amp;amp; single-nucleus RNA-seq',
+          description: "scanpy / Seurat-style pipelines + a reusable in-house scRNA framework",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-spatial-transcriptomics-visium-hd",
+          title: 'Spatial transcriptomics (Visium HD)',
+          description: "Whole-tissue spatial profiling with GPU-accelerated single-cell",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
+            },},{id: "projects-chip-seq-amp-cut-amp-run-epigenomics",
+          title: 'ChIP-seq &amp;amp; CUT&amp;amp;RUN epigenomics',
+          description: "Spike-in-normalized peak calling &amp; genome-wide visualization",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
+            },},{id: "projects-somatic-variant-calling-for-a-drug-response-study",
+          title: 'Somatic variant calling for a drug-response study',
+          description: "Tumor–normal somatic calling with Mutect2 &amp; DeepSomatic",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project/";
+            },},{id: "projects-proteomics-amp-metabolomics-analysis",
+          title: 'Proteomics &amp;amp; metabolomics analysis',
+          description: "Differential abundance, KSEA, batch harmonization, set enrichment",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
+            },},{id: "projects-protein-function-prediction-deep-learning",
+          title: 'Protein function prediction (deep learning)',
+          description: "Multi-label GO prediction with ESM3 embeddings — Kaggle CAFA",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_project/";
             },},{
         id: 'social-email',
         title: 'email',
