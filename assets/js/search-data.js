@@ -441,14 +441,14 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/", "_blank");
+          window.open("https://www.linkedin.com/in/ngoc-khoi-dang-9a4791192", "_blank");
         },
       },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
         handler: () => {
-          window.open("https://orcid.org/", "_blank");
+          window.open("https://orcid.org/0009-0005-8868-7808", "_blank");
         },
       },{
         id: 'social-rss',
@@ -462,7 +462,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=", "_blank");
+          window.open("https://scholar.google.com/citations?user=vSuWE_YAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
