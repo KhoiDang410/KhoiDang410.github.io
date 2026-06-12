@@ -2,96 +2,99 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Ngoc Khoi Dang
     - name: Languages
-      value: English, German
+      value: English, Vietnamese
+    - name: Email
+      value: khoidnyds@gmail.com
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Applied Computer Science
+      institution: Virginia Tech, Blacksburg, VA
+      year: 2021 - 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - GPA 3.55
+    - title: B.S. in Computer Engineering (Machine Learning)
+      institution: Virginia Tech, Blacksburg, VA
+      year: 2019 - 2020
       description:
-        - Description 1.
-        - Description 2.
+        - GPA 3.80 — Summa Cum Laude
+    - title: Doctor of Medicine (M.D.), General Medicine
+      institution: University of Medicine and Pharmacy at Ho Chi Minh City, Vietnam
+      year: 2008 - 2014
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Computational Biologist II
+      institution: Bioinformatics Department, UT Southwestern Medical Center
+      year: 2025 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Drives advanced analysis of multi-omics NGS datasets and customized structural variant calling pipelines.
+        - Mentors junior researchers in computational problem-solving and software development best practices.
+    - title: Associate Data Scientist
+      institution: Epigenetics and Molecular Carcinogenesis Department, MD Anderson Cancer Center
+      year: 2022 - 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Developed and maintained algorithms and software tools supporting cancer research projects.
+        - Analyzed complex sequencing data — DNA-seq, bulk RNA-seq, scRNA-seq, and CUT&RUN.
+    - title: Bioinformatics Intern
+      institution: Functional Genomics Department, Integrated DNA Technologies
+      year: 2021
       description:
+        - Analyzed and validated the hierarchical structure of genome annotation files from NCBI and Ensembl.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
+- title: Core Competencies
+  type: nested_list
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Algorithm & Software Engineering
+      items:
+        - Scalable, concurrent algorithms, custom statistical metrics, and hardware-accelerated software for computational bottlenecks in translational research.
+    - title: Multi-Omics & Clinical NGS
+      items:
+        - WES, DNA-seq, bulk/sc/snRNA-seq, ChIP-seq, and CUT&RUN, integrating large-scale somatic catalogs (TCGA, GTEx, MC3).
+    - title: Pipeline Orchestration
+      items:
+        - Massively parallel, reproducible workflows with Nextflow (nf-core, DSL2) and Snakemake.
+    - title: HPC & Infrastructure
+      items:
+        - Job management (Slurm, LSF), containerization (Docker, Apptainer, Podman), environment orchestration (Pixi, Mamba), and cloud compute (AWS, Azure).
+    - title: Machine Learning & AI
+      items:
+        - Deep learning frameworks (PyTorch, Lightning, Keras) and ESM protein models with GPU acceleration (CUDA/cuDNN).
 
-- title: Honors and Awards
-  type: time_table
+- title: Technical Skills
+  type: nested_list
   contents:
-    - year: 1921
+    - title: Programming Languages
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Python, R, C#, C++, Java, MATLAB
+    - title: Data Science & ML Frameworks
       items:
-        - Max Planck Medal
+        - PyTorch, Keras, Lightning
+    - title: Workflow Management
+      items:
+        - Nextflow, Snakemake
+    - title: Bioinformatics Tools
+      items:
+        - Biopython, Bioconductor, DESeq2, Picard, Immcantation, GATK, HOMER, SEACR, MACS3, rMATS, TRUST4, Seurat, deepTools, copyKat, scType, DeepVariant
+    - title: Systems, HPC & DevOps
+      items:
+        - Linux system administration, Slurm, LSF, Git, GitLab CI/CD, Apptainer, Podman
+    - title: Cloud
+      items:
+        - Azure, AWS
+    - title: UI / UX
+      items:
+        - Plotly + Dash, Shiny
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Computational Biology & Bioinformatics
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Multi-omics integration and cancer genomics
+        - Reproducible, scalable NGS pipeline engineering
+        - Machine learning for genomics and protein modeling
