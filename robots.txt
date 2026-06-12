@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://KhoiDang410.github.io/sitemap.xml
+Sitemap: https://khoidnyds.github.io/sitemap.xml
