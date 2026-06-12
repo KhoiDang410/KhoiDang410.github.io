@@ -8,9 +8,17 @@ category: analyses
 related_publications: false
 ---
 
-Quantitative ChIP-seq / CUT&RUN pipelines using **ChIP-Rx spike-in
-normalization** for accurate cross-sample comparison. Nextflow workflow:
-trim_galore → BWA-MEM2 → MarkDuplicates → **MACS3 / SEACR / LanceOtron** peak
-calling → **deepTools** (bamCompare, computeMatrix, metagene plots) →
-scale-factor normalization, plus **karyoploteR** genome-wide visualizations and
-R downstream analysis.
+**Why it matters.** Chromatin state and protein–DNA occupancy govern which genes
+are transcribed. Crucially, when a perturbation shifts histone marks or polymerase
+occupancy *globally*, standard read-depth normalization hides the change — it makes
+every sample look the same. **Spike-in (ChIP-Rx) normalization** restores absolute,
+quantitative comparison, which is what lets these experiments detect genome-wide
+epigenetic shifts rather than just relative redistribution.
+
+**Approach & tools.** A **Nextflow** epigenomics pipeline:
+
+- Trim Galore → BWA-MEM2 → Picard MarkDuplicates
+- peak calling with **MACS3**, **SEACR**, and **LanceOtron**
+- **deepTools** (bamCompare, computeMatrix, metagene/heatmap plots)
+- spike-in scale-factor normalization (e.g., *Drosophila* reference)
+- **karyoploteR** genome-wide visualizations and R downstream analysis

@@ -8,11 +8,20 @@ category: analyses
 related_publications: false
 ---
 
-Whole-tissue **Visium HD** spatial transcriptomics across multiple samples and
-disease stages. Python pipeline: **bin2cell** H&E + GEX segmentation → QC →
-normalize / HVG / PCA → **Harmony** batch integration → **Leiden** clustering →
-UMAP → dual annotation (cluster- and cell-level) → cellxgene export →
-composition analysis and **pseudobulk DESeq2** differential expression with
-GO/pathway enrichment.
+**Why it matters.** Dissociating tissue for single-cell sequencing discards
+spatial context. Spatial transcriptomics keeps tissue architecture intact, mapping
+not just *what* genes change but *where* — which is decisive in structured organs
+like the brain, where region- and cell-type-specific responses (e.g., during
+demyelination and remyelination) define how a disease progresses.
+
+**Approach & tools.** A **Visium HD** Python pipeline across multiple samples and
+disease stages:
+
+- **bin2cell** H&E + gene-expression segmentation into cell-like objects
+- QC → normalization / HVG / PCA → **Harmony** batch integration
+- **Leiden** clustering → UMAP
+- dual annotation: **EnrichR** (cluster-level) + **Allen MapMyCells** (cell-level)
+- **cellxgene** export, composition analysis, and **pseudobulk DESeq2**
+  differential expression with GO / pathway enrichment
 
 GPU-accelerated with **rapids-singlecell** and fully seeded for reproducibility.

@@ -8,8 +8,16 @@ category: analyses
 related_publications: false
 ---
 
-Somatic variant calling on paired **tumor–normal** cell lines from a
-drug-treatment study. Nextflow on SLURM: fastqc/multiqc → trim_galore →
-BWA-MEM2 → GATK4 (MarkDuplicates, BQSR) → **Mutect2** (with read-orientation and
-contamination models) and **DeepSomatic** → **VEP** annotation, with downstream
-R analysis of the resulting variant calls.
+**Why it matters.** Profiling a tumor's somatic mutations before and after drug
+treatment exposes drug-induced mutational signatures and candidate
+resistance mechanisms — the genetic changes that let cancer cells survive therapy.
+That directly informs combination-treatment strategies.
+
+**Approach & tools.** A paired **tumor–normal** somatic pipeline in **Nextflow** on
+**SLURM**:
+
+- FastQC / MultiQC → Trim Galore → BWA-MEM2
+- **GATK4** MarkDuplicates and BQSR
+- somatic calling with GATK4 **Mutect2** (read-orientation & contamination models)
+  and **DeepSomatic** (deep-learning caller) for orthogonal confidence
+- **VEP** functional annotation, with downstream variant analysis in R

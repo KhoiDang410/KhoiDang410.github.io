@@ -8,15 +8,23 @@ category: pipelines
 related_publications: false
 ---
 
-A production-grade, ultra-deep **targeted gene-panel** variant-calling pipeline —
-the most engineering-mature project in my portfolio. Built in **Nextflow DSL2**,
-it runs cohort-scale on **SLURM** with full **Apptainer** containerization and
-covers the complete germline + somatic + **structural-variant** workflow across
-10 stages:
+**Why it matters.** Targeted gene-panel sequencing enables ultra-deep detection
+of clinically relevant variation that broader assays miss — germline predisposition
+alleles, low-frequency somatic driver mutations, and structural rearrangements.
+Resolving all three variant classes together is essential for molecular diagnosis
+and therapy selection in cancer, where a structural variant or CNV may explain a
+phenotype that single-nucleotide variants alone cannot.
 
-QC → BWA-MEM2 mapping → GATK4 BQSR → HaplotypeCaller / FreeBayes (germline) →
-**Mutect2** (somatic) → SV calling → **VEP / AnnotSV** annotation → variant QC &
-reporting.
+**Approach & tools.** A production-grade **Nextflow DSL2** pipeline running
+cohort-scale on **SLURM** with full **Apptainer** containerization:
 
-83 modules, backed by **61 `nf-test` unit tests and snapshots** — scientific
-software treated as software, with version pinning and seeded, reproducible runs.
+- **QC:** FastQC, MultiQC, fastp / Trim Galore
+- **Alignment & preprocessing:** BWA-MEM2, **GATK4** (MarkDuplicates, BQSR)
+- **Germline:** GATK4 HaplotypeCaller, FreeBayes
+- **Somatic:** GATK4 **Mutect2** (read-orientation & contamination models)
+- **Structural variants / CNV:** Manta, Strelka, GRIDSS, Delly, CNVkit
+- **Annotation & reporting:** **VEP**, **AnnotSV**, variant QC summaries
+
+83 modules backed by **61 `nf-test` unit tests and snapshots**, with version
+pinning and seeded, reproducible runs — the most engineering-mature project in my
+portfolio.
