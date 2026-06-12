@@ -24,17 +24,17 @@ github_username: khoidnyds # your GitHub user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-linkedin_username: # TODO: your LinkedIn user name (the part after /in/)
+linkedin_username: ngoc-khoi-dang-9a4791192 # your LinkedIn user name (the part after /in/)
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
-orcid_id: # TODO: your ORCID ID (format 0000-0000-0000-0000)
+orcid_id: 0009-0005-8868-7808 # your ORCID ID (format 0000-0000-0000-0000)
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 rss_icon: true # comment this line to hide the RSS icon
-scholar_userid: # TODO: your Google Scholar ID (the user= value in your profile URL)
+scholar_userid: vSuWE_YAAAAJ # your Google Scholar ID (the user= value in your profile URL)
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
