@@ -6,7 +6,7 @@ subtitle: Computational Biologist · <a href='https://www.utsouthwestern.edu/'>U
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic_khoi.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Bioinformatics Department</p>
